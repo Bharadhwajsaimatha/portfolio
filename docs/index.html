@@ -80,16 +80,11 @@
           <!-- Navbar links -->
           <ul class="nav-menu">
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="https://loose0ends.wordpress.com/">BlOG</a></li>
+            <li><a class="nav-link" href="#documents">DOCUMENTS</a></li>
+            <li><a class="nav-link" href="#achievements">ACHIEVEMENTS</a></li>
+            <li><a class="nav-link" href="#huggingface">HF SPACES</a></li>
+            <li><a class="nav-link" href="https://loose0ends.wordpress.com/">BLOG</a></li>
             <li><a class="nav-link" href="#footer">CONTACT</a></li>
-            <li>
-                <a
-                class="nav-link btn btn-primary"
-                href="assets/CV_SaiBharadhwajMatha.pdf"
-                target="_blank"
-                >RESUME <i class="fas fa-arrow-right"></i
-                ></a>
-            </li>
 
             <!-- Toggle switch -->
             <div class="theme-switch">
@@ -138,104 +133,459 @@
       <div class="division"></div>
       <div class="content-text">
         <h2>Projects</h2>
-        <p>Check out some of my projects</p>
+        <p>Check out some of my featured projects</p>
       </div>
 
-      <article class="project">
+      <article class="project-list">
         <!-- Project 1 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>AirSemOcc</h3>
-              <p>Open3D, PyTorch, TensorRT</p>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/project-one.png" alt="AirSemOcc" />
+            <div class="project-links">
+              <a href="https://github.com/Bharadhwajsaimatha/AirSemOcc-Semantic-Occupancy-Project-for-UAS" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
             </div>
-
-            <div class="project-link">
-              <a href="https://github.com/Bharadhwajsaimatha/AirSemOcc-Semantic-Occupancy-Project-for-UAS" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+          </div>
+          <div class="project-details">
+            <h3>AirSemOcc</h3>
+            <p class="project-tech">Open3D, PyTorch, TensorRT</p>
+            <p class="project-description">
+              Semantic occupancy prediction for unmanned aerial systems using deep learning. 
+              This project focuses on 3D scene understanding for autonomous navigation in complex environments.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">3D Reconstruction</span>
             </div>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>3D Semantic Point Clouds</h3>
-              <p>SfM,MVS,Semantic Segmentation</p>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/sem_pcd.png" alt="3D Semantic Point Clouds" />
+            <div class="project-links">
+              <a href="https://github.com/Bharadhwajsaimatha/3D-Semantic-Point-Cloud-Generation" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
             </div>
-
-            <div class="project-link">
-              <a href="https://github.com/Bharadhwajsaimatha/3D-Semantic-Point-Cloud-Generation" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+          </div>
+          <div class="project-details">
+            <h3>3D Semantic Point Clouds</h3>
+            <p class="project-tech">SfM, MVS, Semantic Segmentation</p>
+            <p class="project-description">
+              Generation of semantically labeled 3D point clouds from multi-view images using 
+              structure from motion and semantic segmentation techniques.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">3D Vision</span>
+              <span class="tag">Point Clouds</span>
             </div>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Windows-State Recognition</h3>
-              <p>YOLOv5, OpenCV</p>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/window_reg.gif" alt="Windows State Recognition" />
+            <div class="project-links">
+              <a href="https://github.com/Bharadhwajsaimatha/windows_state_recognition_yolov5" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
             </div>
-
-            <div class="project-link">
-              <a href="https://github.com/Bharadhwajsaimatha/windows_state_recognition_yolov5" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+          </div>
+          <div class="project-details">
+            <h3>Windows State Recognition</h3>
+            <p class="project-tech">YOLOv5, OpenCV</p>
+            <p class="project-description">
+              Real-time detection and classification of window states (open/closed) using 
+              YOLOv5 object detection for building automation systems.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Object Detection</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">YOLO</span>
             </div>
           </div>
         </div>
 
         <!-- Project 4 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Virtual Wardrobe</h3>
-              <p>OpenCV, GMM, PoseNet</p>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/virtual-wardrobe.png" alt="Virtual Wardrobe" />
+            <div class="project-links">
+              <a href="https://github.com/Bharadhwajsaimatha/virtual_wardrobe-with-foreground-extractor" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
             </div>
-
-            <div class="project-link">
-              <a href="https://github.com/Bharadhwajsaimatha/virtual_wardrobe-with-foreground-extractor" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+          </div>
+          <div class="project-details">
+            <h3>Virtual Wardrobe</h3>
+            <p class="project-tech">OpenCV, GMM, PoseNet</p>
+            <p class="project-description">
+              Virtual try-on system using pose estimation and Gaussian mixture models 
+              for real-time clothing overlay on human subjects.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Pose Estimation</span>
+              <span class="tag">Augmented Reality</span>
+              <span class="tag">Computer Vision</span>
             </div>
           </div>
         </div>
 
         <!-- Project 5 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Line Follow Robot</h3>
-              <p>ESP32, Infrared</p>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/line_follow.gif" alt="Line Follow Robot" />
+            <div class="project-links">
+              <a href="https://github.com/Bharadhwajsaimatha/novel_line_follow_robot_with_obstacle_sensing" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
             </div>
-
-            <div class="project-link">
-              <a href="https://github.com/Bharadhwajsaimatha/novel_line_follow_robot_with_obstacle_sensing" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+          </div>
+          <div class="project-details">
+            <h3>Line Follow Robot</h3>
+            <p class="project-tech">ESP32, Infrared Sensors</p>
+            <p class="project-description">
+              Autonomous line-following robot with obstacle detection and avoidance capabilities 
+              using ESP32 microcontroller and infrared sensors.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Robotics</span>
+              <span class="tag">Embedded Systems</span>
+              <span class="tag">IoT</span>
             </div>
           </div>
         </div>
 
         <!-- Project 6 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Speed Gun</h3>
-              <p>OpenCV, Optical Flow</p>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/vehicle_speed.png" alt="Speed Gun" />
+            <div class="project-links">
+              <a href="https://github.com/Bharadhwajsaimatha/Vehicle_Speed_estimation_OpticalFLow_LK" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
             </div>
+          </div>
+          <div class="project-details">
+            <h3>Vehicle Speed Estimation</h3>
+            <p class="project-tech">OpenCV, Optical Flow</p>
+            <p class="project-description">
+              Computer vision-based vehicle speed estimation using Lucas-Kanade optical flow 
+              algorithm for traffic monitoring applications.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Optical Flow</span>
+              <span class="tag">Traffic Analysis</span>
+            </div>
+          </div>
+        </div>
 
-            <div class="project-link">
-              <a href="https://github.com/Bharadhwajsaimatha/Vehicle_Speed_estimation_OpticalFLow_LK" target="_blank"><i class="fab fa-github"></i></a>
-              <!-- <a href="#" target="_blank"><i class="fas fa-globe"></i></a> -->
+        <!-- Project 7 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/project-two.png" alt="Neural Style Transfer" />
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3>Neural Style Transfer</h3>
+            <p class="project-tech">PyTorch, CNN, Deep Learning</p>
+            <p class="project-description">
+              Implementation of neural style transfer using convolutional neural networks 
+              to combine content and artistic style from different images.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Generative AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/project-three.png" alt="Real-time Object Tracking" />
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3>Real-time Object Tracking</h3>
+            <p class="project-tech">YOLO, DeepSORT, OpenCV</p>
+            <p class="project-description">
+              Multi-object tracking system combining YOLO detection with DeepSORT algorithm 
+              for robust real-time object tracking in video streams.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Object Detection</span>
+              <span class="tag">Object Tracking</span>
+              <span class="tag">Real-time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/project/project-four.png" alt="Gesture Recognition" />
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3>Hand Gesture Recognition</h3>
+            <p class="project-tech">MediaPipe, TensorFlow, CNN</p>
+            <p class="project-description">
+              Real-time hand gesture recognition system using MediaPipe for hand landmark 
+              detection and CNN for gesture classification.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Gesture Recognition</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Human-Computer Interaction</span>
             </div>
           </div>
         </div>
       </article>
 
       <a href="https://github.com/Bharadhwajsaimatha" class="btn btn-secondary"
-        target="_blank" >See More <i class="fas fa-arrow-right"></i
-      ></a>
+        target="_blank">View All Projects <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="documents-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Academic Documents</h2>
+        <p>Research papers, thesis, and professional documents</p>
+      </div>
+
+      <article class="documents-grid">
+        <div class="document-card">
+          <div class="document-icon">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div class="document-info">
+            <h3>Resume</h3>
+            <p>Professional curriculum vitae</p>
+            <a href="assets/CV_SaiBharadhwajMatha.pdf" target="_blank" class="doc-link">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="document-info">
+            <h3>Thesis Overview</h3>
+            <p>Master's thesis summary and findings</p>
+            <a href="assets/thesis_overview.pdf" target="_blank" class="doc-link">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon">
+            <i class="fas fa-research"></i>
+          </div>
+          <div class="document-info">
+            <h3>Research Statement</h3>
+            <p>Research interests and future directions</p>
+            <a href="assets/research_statement.pdf" target="_blank" class="doc-link">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="document-card">
+          <div class="document-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="document-info">
+            <h3>Publications</h3>
+            <p>Published research papers and articles</p>
+            <a href="assets/publications.pdf" target="_blank" class="doc-link">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Achievements & Certifications</h2>
+        <p>Awards, certifications, and professional recognitions</p>
+      </div>
+
+      <article class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="achievement-info">
+            <h3>Academic Excellence Award</h3>
+            <p>Outstanding performance in M.Eng AI program</p>
+            <span class="achievement-date">2024</span>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="achievement-info">
+            <h3>Deep Learning Specialization</h3>
+            <p>Coursera - Andrew Ng</p>
+            <span class="achievement-date">2023</span>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <div class="achievement-info">
+            <h3>Computer Vision Certificate</h3>
+            <p>Stanford University Online</p>
+            <span class="achievement-date">2023</span>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="achievement-info">
+            <h3>Best Project Award</h3>
+            <p>University capstone project competition</p>
+            <span class="achievement-date">2022</span>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="achievement-info">
+            <h3>Python Certification</h3>
+            <p>Professional Python Developer</p>
+            <span class="achievement-date">2022</span>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="achievement-info">
+            <h3>AWS Cloud Practitioner</h3>
+            <p>Amazon Web Services</p>
+            <span class="achievement-date">2021</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Hugging Face Spaces Section -->
+    <section id="huggingface" class="huggingface-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>🤗 Hugging Face Spaces</h2>
+        <p>Interactive AI demos and applications</p>
+      </div>
+
+      <article class="spaces-grid">
+        <div class="space-card">
+          <div class="space-preview">
+            <img src="./assets/hf-spaces/space1.svg" alt="Image Classification Demo" />
+            <div class="space-overlay">
+              <a href="#" target="_blank" class="space-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="space-info">
+            <h3>Image Classification</h3>
+            <p>Real-time image classification using state-of-the-art models</p>
+            <div class="space-tags">
+              <span class="hf-tag">Computer Vision</span>
+              <span class="hf-tag">Classification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">
+            <img src="./assets/hf-spaces/space2.svg" alt="Object Detection Demo" />
+            <div class="space-overlay">
+              <a href="#" target="_blank" class="space-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="space-info">
+            <h3>Object Detection</h3>
+            <p>YOLO-based object detection with custom trained models</p>
+            <div class="space-tags">
+              <span class="hf-tag">Object Detection</span>
+              <span class="hf-tag">YOLO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">
+            <img src="./assets/hf-spaces/space3.svg" alt="Style Transfer Demo" />
+            <div class="space-overlay">
+              <a href="#" target="_blank" class="space-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="space-info">
+            <h3>Neural Style Transfer</h3>
+            <p>Transform images with artistic style transfer</p>
+            <div class="space-tags">
+              <span class="hf-tag">Generative AI</span>
+              <span class="hf-tag">Style Transfer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-preview">
+            <img src="./assets/hf-spaces/space4.svg" alt="Pose Estimation Demo" />
+            <div class="space-overlay">
+              <a href="#" target="_blank" class="space-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="space-info">
+            <h3>Pose Estimation</h3>
+            <p>Real-time human pose estimation and analysis</p>
+            <div class="space-tags">
+              <span class="hf-tag">Pose Estimation</span>
+              <span class="hf-tag">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <a href="https://huggingface.co/Bharadhwajsaimatha" class="btn btn-secondary"
+        target="_blank">View All Spaces <i class="fas fa-arrow-right"></i></a>
     </section>
 
     <footer id="footer">
