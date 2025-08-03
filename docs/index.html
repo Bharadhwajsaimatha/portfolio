@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content        <a
+          href="#contact"
+          class="btn btn-secondary"
+          >Connect With Me</a>edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
     <title>SaiBharadhwajMatha-Portfolio</title>
@@ -586,6 +589,80 @@
 
       <a href="https://huggingface.co/Bharadhwajsaimatha" class="btn btn-secondary"
         target="_blank">View All Spaces <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Get In Touch</h2>
+        <p>Have a question or want to work together? I'd love to hear from you!</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>bharadhwaj2299@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <p>Connect with me professionally</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <p>Check out my code repositories</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xpznkdqr" method="POST">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email (Optional)</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, question, or just say hello!"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+
+          <!-- Hidden fields for Formspree -->
+          <input type="hidden" name="_subject" value="New Contact Form Submission - Portfolio">
+          <input type="hidden" name="_next" value="https://bharadhwajsaimatha.github.io/portfolio/thank-you.html">
+          <input type="hidden" name="_replyto" value="bharadhwaj2299@gmail.com">
+        </form>
+      </div>
     </section>
 
     <footer id="footer">
