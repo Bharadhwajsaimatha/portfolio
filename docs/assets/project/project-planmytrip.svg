@@ -1,0 +1,29 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffaf7b"/>
+      <stop offset="100%" stop-color="#d76d77"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <!-- Map pin and route -->
+  <g fill="none" stroke="url(#accent)" stroke-width="3">
+    <path d="M80,300 C200,220 320,260 520,140"/>
+    <circle cx="120" cy="280" r="8" fill="#ffaf7b"/>
+    <circle cx="520" cy="140" r="8" fill="#d76d77"/>
+  </g>
+  <g transform="translate(480,60)">
+    <path d="M0,20 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0" fill="#ffaf7b"/>
+    <rect x="18" y="30" width="4" height="60" fill="#ffaf7b"/>
+  </g>
+  <!-- Cards -->
+  <rect x="60" y="80" width="160" height="100" rx="12" fill="#fff" opacity="0.08"/>
+  <rect x="240" y="80" width="160" height="100" rx="12" fill="#fff" opacity="0.08"/>
+  <rect x="420" y="80" width="160" height="100" rx="12" fill="#fff" opacity="0.08"/>
+  <text x="40" y="40" fill="#e5e7eb" font-family="Inter, Arial" font-size="22" font-weight="700">PlanMyTrip - Agent Itinerary Builder</text>
+  <text x="40" y="65" fill="#9ca3af" font-family="Inter, Arial" font-size="14">Agents • LLM • Recommendations</text>
+</svg>

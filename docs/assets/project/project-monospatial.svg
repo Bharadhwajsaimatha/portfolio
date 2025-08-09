@@ -1,0 +1,35 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1022"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <!-- Agent graph -->
+  <g stroke="#34d399" stroke-width="2" fill="none" opacity="0.8">
+    <circle cx="140" cy="240" r="6" fill="#34d399"/>
+    <circle cx="240" cy="180" r="6" fill="#34d399"/>
+    <circle cx="320" cy="120" r="6" fill="#34d399"/>
+    <circle cx="400" cy="180" r="6" fill="#34d399"/>
+    <circle cx="500" cy="140" r="6" fill="#34d399"/>
+    <line x1="140" y1="240" x2="240" y2="180"/>
+    <line x1="240" y1="180" x2="320" y2="120"/>
+    <line x1="320" y1="120" x2="400" y2="180"/>
+    <line x1="400" y1="180" x2="500" y2="140"/>
+  </g>
+  <!-- Depth gradient -->
+  <defs>
+    <linearGradient id="depth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect x="60" y="60" width="520" height="140" rx="12" fill="url(#depth)" opacity="0.6"/>
+  <text x="40" y="40" fill="#e5e7eb" font-family="Inter, Arial" font-size="22" font-weight="700">MonoSpatial: Agent-Based Distance Estimation</text>
+  <text x="40" y="65" fill="#9ca3af" font-family="Inter, Arial" font-size="14">Smolagents • Depth Anything • Intrinsics</text>
+</svg>
