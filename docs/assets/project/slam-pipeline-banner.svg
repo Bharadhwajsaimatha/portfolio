@@ -1,0 +1,141 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="slamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D3436;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#636E72;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A29BFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#74B9FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#slamGradient)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#74B9FF" stroke-width="1" opacity="0.1">
+    <line x1="0" y1="0" x2="1200" y2="600" />
+    <line x1="1200" y1="0" x2="0" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" stroke-width="2" opacity="0.2"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke-width="2" opacity="0.2"/>
+  </g>
+
+  <!-- Left side: UAV visualization -->
+  <g id="uav-group">
+    <!-- UAV body -->
+    <circle cx="250" cy="200" r="40" fill="#74B9FF" opacity="0.8"/>
+    <rect x="220" y="170" width="60" height="60" fill="#A29BFE" opacity="0.3" rx="10"/>
+    
+    <!-- Propellers -->
+    <g stroke="#74B9FF" stroke-width="3" fill="none" opacity="0.6">
+      <circle cx="180" cy="150" r="30" />
+      <circle cx="320" cy="150" r="30" />
+      <circle cx="180" cy="250" r="30" />
+      <circle cx="320" cy="250" r="30" />
+    </g>
+
+    <!-- Signal lines from UAV -->
+    <g stroke="#A29BFE" stroke-width="2" stroke-dasharray="5,5" opacity="0.5">
+      <line x1="290" y1="210" x2="450" y2="210" />
+      <line x1="290" y1="195" x2="470" y2="150" />
+      <line x1="290" y1="225" x2="470" y2="270" />
+    </g>
+
+    <!-- Data points from UAV -->
+    <g fill="#74B9FF" opacity="0.7">
+      <circle cx="450" cy="210" r="8"/>
+      <circle cx="470" cy="150" r="8"/>
+      <circle cx="470" cy="270" r="8"/>
+    </g>
+  </g>
+
+  <!-- Center: SLAM pipeline -->
+  <g id="pipeline">
+    <!-- Pipeline boxes -->
+    <g>
+      <!-- Vision capture -->
+      <rect x="500" y="100" width="120" height="80" rx="8" fill="url(#accentGradient)" opacity="0.8" stroke="#fff" stroke-width="2"/>
+      <text x="560" y="145" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Vision</text>
+      
+      <!-- Arrow -->
+      <path d="M 630 140 L 680 140" fill="none" stroke="#74B9FF" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Feature extraction -->
+      <rect x="690" y="100" width="120" height="80" rx="8" fill="url(#accentGradient)" opacity="0.8" stroke="#fff" stroke-width="2"/>
+      <text x="750" y="145" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Features</text>
+      
+      <!-- Arrow -->
+      <path d="M 820 140 L 870 140" fill="none" stroke="#74B9FF" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Tracking -->
+      <rect x="880" y="100" width="120" height="80" rx="8" fill="url(#accentGradient)" opacity="0.8" stroke="#fff" stroke-width="2"/>
+      <text x="940" y="145" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">Tracking</text>
+    </g>
+
+    <!-- Arrow marker definition -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#74B9FF" />
+      </marker>
+    </defs>
+
+    <!-- Optimization loop -->
+    <circle cx="600" cy="300" r="80" fill="none" stroke="#74B9FF" stroke-width="2" opacity="0.4"/>
+    <g fill="#A29BFE" opacity="0.9">
+      <text x="600" y="295" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">ORB-SLAM3</text>
+      <text x="600" y="310" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">Optimization</text>
+    </g>
+
+    <!-- Map generation -->
+    <g opacity="0.7">
+      <circle cx="800" cy="380" r="35" fill="#74B9FF"/>
+      <text x="800" y="388" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">3D Map</text>
+    </g>
+
+    <circle cx="400" cy="380" r="35" fill="#74B9FF" opacity="0.7"/>
+    <text x="400" y="388" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">Localization</text>
+  </g>
+
+  <!-- Right side: Multi-UAV swarm -->
+  <g id="swarm" opacity="0.8">
+    <g>
+      <circle cx="950" cy="250" r="25" fill="#74B9FF"/>
+      <text x="950" y="257" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">UAV 1</text>
+    </g>
+    <g>
+      <circle cx="1050" cy="220" r="25" fill="#74B9FF"/>
+      <text x="1050" y="227" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">UAV 2</text>
+    </g>
+    <g>
+      <circle cx="1050" cy="320" r="25" fill="#74B9FF"/>
+      <text x="1050" y="327" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">UAV 3</text>
+    </g>
+
+    <!-- Connection lines between UAVs -->
+    <g stroke="#A29BFE" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6">
+      <line x1="975" y1="235" x2="1025" y2="235" />
+      <line x1="975" y1="265" x2="1025" y2="305" />
+      <line x1="1050" y1="245" x2="1050" y2="295" />
+    </g>
+  </g>
+
+  <!-- Title section -->
+  <g>
+    <text x="600" y="530" font-size="32" font-weight="bold" fill="#fff" text-anchor="middle">Real-time Visual SLAM Pipeline</text>
+    <text x="600" y="560" font-size="18" fill="#A29BFE" text-anchor="middle">Collaborative Navigation for UAV Swarms</text>
+  </g>
+
+  <!-- Tech stack labels -->
+  <g fill="#74B9FF" opacity="0.8">
+    <rect x="50" y="520" width="100" height="35" rx="5" fill="#2D3436" stroke="#74B9FF" stroke-width="1"/>
+    <text x="100" y="542" font-size="12" font-weight="bold" fill="#74B9FF" text-anchor="middle">PX4 • ROS2</text>
+    
+    <rect x="170" y="520" width="120" height="35" rx="5" fill="#2D3436" stroke="#74B9FF" stroke-width="1"/>
+    <text x="230" y="542" font-size="12" font-weight="bold" fill="#74B9FF" text-anchor="middle">ORB-SLAM3</text>
+    
+    <rect x="310" y="520" width="100" height="35" rx="5" fill="#2D3436" stroke="#74B9FF" stroke-width="1"/>
+    <text x="360" y="542" font-size="12" font-weight="bold" fill="#74B9FF" text-anchor="middle">OpenCV</text>
+  </g>
+</svg>

@@ -43,6 +43,45 @@ h2::selection {
   background: var(--secondary-color);
 }
 
+/* Resume Button Styles */
+.btn-resume,
+.btn-resume-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--bg-primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-resume:hover,
+.btn-resume-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 205, 66, 0.3);
+}
+
+/* Hero buttons container */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-resume-hero {
+  margin: 5px;
+  padding: 0.85rem 2.2rem;
+  font-size: 0.85rem;
+}
+
+/* Dark mode button styling */
+[data-theme="dark"] .btn-resume,
+[data-theme="dark"] .btn-resume-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #000000;
+}
+
 /* Dark mode toggle */
 #switch {
   display: none;

@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title>SaiBharadhwajMatha-Portfolio</title>
-    <meta name="title" content="SaiBharadhwajMatha-Portfolio" />
-    <meta name="description" content="M.Eng in Artificial Intelligence specializing in Computer Vision and Deep Learning." />
+    <title>Sai Bharadhwaj Matha - Research Engineer in AI & Computer Vision</title>
+    <meta name="title" content="Sai Bharadhwaj Matha - Research Engineer in AI & Computer Vision" />
+    <meta name="description" content="Research Engineer specializing in AI, 3D Computer Vision, SLAM, UAV Systems, and Robotics. M.Eng AI from THD, CVPR 2026 Conference Author. Building autonomous solutions." />
+    <meta name="keywords" content="AI, Computer Vision, Deep Learning, SLAM, UAV, Robotics, 3D Vision, Semantic Segmentation, Research Engineer, Python, PyTorch, ROS2" />
+    <meta name="author" content="Sai Bharadhwaj Matha" />
+    <meta name="language" content="English" />
+    <meta name="theme-color" content="#ffcd42" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://metatags.io/" />
-    <meta property="og:title" content="SaiBharadhwajMatha-Portfolio" />
-    <meta property="og:description" content="M.Eng in Artificial Intelligence specializing in Computer Vision and Deep Learning." />
-    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="og:url" content="https://bharadhwajsaimatha.github.io/portfolio/" />
+    <meta property="og:title" content="Sai Bharadhwaj Matha - Research Engineer in AI & Computer Vision" />
+    <meta property="og:description" content="Explore my research in 3D scene completion, semantic mapping, SLAM, and autonomous systems. CVPR 2026 and ECCV 2026 conference papers." />
+    <meta property="og:image" content="https://bharadhwajsaimatha.github.io/portfolio/assets/profile_img.png" />
+    <meta property="og:site_name" content="Sai Bharadhwaj Matha - Portfolio" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://metatags.io/" />
-    <meta property="twitter:title" content="SaiBharadhwajMatha-Portfolio" />
-    <meta property="twitter:description" content="M.Eng in Artificial Intelligence specializing in Computer Vision and Deep Learning." />
-    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="twitter:url" content="https://bharadhwajsaimatha.github.io/portfolio/" />
+    <meta property="twitter:title" content="Sai Bharadhwaj Matha - Research Engineer in AI & Computer Vision" />
+    <meta property="twitter:description" content="Research Engineer specializing in 3D vision, SLAM, robotics, and AI. Exploring autonomous systems and intelligent perception." />
+    <meta property="twitter:image" content="https://bharadhwajsaimatha.github.io/portfolio/assets/profile_img.png" />
+    <meta name="twitter:creator" content="@bharadhwaj10" />
 
-    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+    <link rel="canonical" href="https://bharadhwajsaimatha.github.io/portfolio/" />
 
     <!-- Link -->
     <link
@@ -80,11 +89,15 @@
           <!-- Navbar links -->
           <ul class="nav-menu">
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#publications">PUBLICATIONS</a></li>
             <li><a class="nav-link" href="#documents">DOCUMENTS</a></li>
+            <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+            <li><a class="nav-link" href="#skills">SKILLS</a></li>
             <li><a class="nav-link" href="#achievements">ACHIEVEMENTS</a></li>
             <li><a class="nav-link" href="#huggingface">HF SPACES</a></li>
             <li><a class="nav-link" href="https://loose0ends.wordpress.com/">BLOG</a></li>
             <li><a class="nav-link" href="#footer">CONTACT</a></li>
+            <li><a class="nav-link btn btn-resume" href="assets/CV_SaiBharadhwajMatha.pdf" download><i class="fas fa-download"></i> Resume</a></li>
 
             <!-- Toggle switch -->
             <div class="theme-switch">
@@ -119,10 +132,10 @@
             An M.Eng in Artificial Intelligence specializing in Computer Vision and Deep Learning, generative AI, with prior experience as an Embedded Systems Engineer.
           </p>
         </div>
-        <a
-          href="#contact"
-          class="btn btn-secondary"
-        >Connect With Me</a>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-secondary">Connect With Me</a>
+          <a href="assets/CV_SaiBharadhwajMatha.pdf" download class="btn btn-resume-hero"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
       </section>
     </header>
 
@@ -134,7 +147,56 @@
         <p>Check out some of my featured projects</p>
       </div>
 
+      <!-- Search Bar -->
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input 
+            type="text" 
+            id="project-search" 
+            class="search-input" 
+            placeholder="Search projects by name, tech, or description..."
+            aria-label="Search projects"
+          />
+          <button class="search-clear" id="search-clear" aria-label="Clear search">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="search-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Computer Vision">Computer Vision</button>
+          <button class="filter-btn" data-filter="Deep Learning">Deep Learning</button>
+          <button class="filter-btn" data-filter="Robotics">Robotics</button>
+          <button class="filter-btn" data-filter="3D Vision">3D Vision</button>
+        </div>
+      </div>
+
       <article class="project-list">
+        <!-- Project 0: Real-time Visual SLAM - NEW -->
+        <div class="project-item featured-project">
+          <div class="featured-badge">Latest</div>
+          <div class="project-image">
+            <img src="./assets/project/slam-pipeline-banner.svg" alt="Real-time Visual SLAM Pipeline for UAV Swarms" />
+            <div class="project-links">
+              <a href="https://github.com/Bharadhwajsaimatha/visual-slam-uav-swarms" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-details">
+            <h3>Real-time Visual SLAM Pipeline for UAV Swarms</h3>
+            <p class="project-tech">PX4, ORB-SLAM3, OpenCV, ROS 2</p>
+            <p class="project-description">
+              Implementation of a collaborative visual SLAM pipeline for autonomous UAVs in simulation environments (Gazebo Classic/AirSim). Working on a novel multi-agent constellation extension for collaborative SLAM, enabling real-time localization and mapping for swarm-based UAV navigation systems.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Robotics</span>
+              <span class="tag">SLAM</span>
+              <span class="tag">Multi-Agent Systems</span>
+              <span class="tag">Autonomous Navigation</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Project 1 -->
         <div class="project-item">
           <div class="project-image">
@@ -373,6 +435,98 @@
         target="_blank">View All Projects <i class="fas fa-arrow-right"></i></a>
     </section>
 
+    <!-- Publications Section -->
+    <section id="publications" class="publications-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Publications</h2>
+        <p>Peer-reviewed research papers and conference publications</p>
+      </div>
+
+      <article class="publications-grid">
+        <!-- Publication 1: OccuFly (CVPR 2026) - HIGHLIGHTED -->
+        <div class="publication-item cvpr-highlight">
+          <div class="publication-badge">
+            <span class="conference-badge">CVPR 2026</span>
+          </div>
+          <div class="publication-image">
+            <img src="./assets/occufly_banner.jpg" alt="OccuFly: Semantic Scene Completion from Aerial Perspective" />
+            <div class="publication-links">
+              <a href="https://markus-42.github.io/publications/2026/occufly/" target="_blank" title="View Paper"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://github.com/Bharadhwajsaimatha/OccuFly" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="publication-details">
+            <h3>OccuFly: A 3D Vision Benchmark for Semantic Scene Completion from the Aerial Perspective</h3>
+            <p class="publication-conference">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</p>
+            <p class="publication-description">
+              A comprehensive 3D vision benchmark dataset for semantic scene completion from unmanned aerial systems. This work establishes a new standard for evaluating SSC models in aerial scenarios with multi-modal data including RGB, thermal, depth, and 3D occupancy ground truth.
+            </p>
+            <div class="publication-tags">
+              <span class="pub-tag">3D Vision</span>
+              <span class="pub-tag">Semantic Segmentation</span>
+              <span class="pub-tag">UAV/UAS</span>
+              <span class="pub-tag">Benchmark Dataset</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 2: SegFly (ECCV 2026) -->
+        <div class="publication-item">
+          <div class="publication-badge">
+            <span class="conference-badge eccv">ECCV 2026</span>
+          </div>
+          <div class="publication-image">
+            <img src="./assets/segfly_banner.png" alt="SegFly: Aerial RGB-Thermal Semantic Segmentation" />
+            <div class="publication-links">
+              <a href="https://markus-42.github.io/publications/2026/segfly/" target="_blank" title="View Paper"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://github.com/Bharadhwajsaimatha/SegFly" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="publication-details">
+            <h3>SegFly: A 2D-3D-2D Paradigm for Aerial RGB-Thermal Semantic Segmentation at Scale</h3>
+            <p class="publication-conference">European Conference on Computer Vision (ECCV), 2026</p>
+            <p class="publication-description">
+              A novel 2D-3D-2D paradigm for multi-modal semantic segmentation at scale, leveraging RGB and thermal imaging for improved scene understanding in aerial applications.
+            </p>
+            <div class="publication-tags">
+              <span class="pub-tag">Thermal Imaging</span>
+              <span class="pub-tag">Multi-Modal Fusion</span>
+              <span class="pub-tag">Semantic Segmentation</span>
+              <span class="pub-tag">UAV/UAS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publication 3: SafeLand (IROS 2026) -->
+        <div class="publication-item">
+          <div class="publication-badge">
+            <span class="conference-badge iros">IROS 2026</span>
+          </div>
+          <div class="publication-image">
+            <img src="./assets/safeland_banner.png" alt="SafeLand: Safe Autonomous Landing System" />
+            <div class="publication-links">
+              <a href="https://markus-42.github.io/publications/2026/safeland/" target="_blank" title="View Paper"><i class="fas fa-file-pdf"></i></a>
+              <a href="https://github.com/Bharadhwajsaimatha/SafeLand" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="publication-details">
+            <h3>SafeLand: Safe Autonomous Landing in Unknown Environments with Bayesian Semantic Mapping</h3>
+            <p class="publication-conference">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026</p>
+            <p class="publication-description">
+              A safety-aware autonomous landing system for UAVs based on Bayesian semantic mapping, enabling reliable operations in unknown and dynamic environments.
+            </p>
+            <div class="publication-tags">
+              <span class="pub-tag">Robotics</span>
+              <span class="pub-tag">Autonomous Navigation</span>
+              <span class="pub-tag">Semantic Mapping</span>
+              <span class="pub-tag">UAV/UAS</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
     <!-- Documents Section -->
     <section id="documents" class="documents-container container">
       <div class="division"></div>
@@ -436,6 +590,220 @@
       </article>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Technical Skills</h2>
+        <p>Languages, frameworks, and tools I work with</p>
+      </div>
+
+      <article class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-cog"></i>
+              <span>Rust</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-cuttlefish"></i>
+              <span>C++</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-linux"></i>
+              <span>Bash/Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Vision -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-brain"></i>
+            <h3>AI & Vision</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-fire"></i>
+              <span>PyTorch</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-neural-network"></i>
+              <span>Deep Learning</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-image"></i>
+              <span>Computer Vision</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-wand-magic-sparkles"></i>
+              <span>Generative AI</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-robot"></i>
+              <span>Agentic AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robotics -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-gear"></i>
+            <h3>Robotics & Embedded</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fas fa-cube"></i>
+              <span>ROS/ROS2</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-microchip"></i>
+              <span>STM32</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-processor"></i>
+              <span>RTOS</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-satellite"></i>
+              <span>UAV Systems</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-zap"></i>
+              <span>Power Electronics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Cloud -->
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & Cloud</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-cube"></i>
+              <span>Kubernetes</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-git"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-cloud"></i>
+              <span>AWS</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Work Experience Timeline Section -->
+    <section id="experience" class="experience-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Professional Journey</h2>
+        <p>Career timeline and professional growth</p>
+      </div>
+
+      <article class="timeline">
+        <!-- Experience 1: Current -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content current-role">
+            <div class="timeline-badge">Current</div>
+            <h3>Research Associate</h3>
+            <p class="timeline-company">Technische Hochschule Ingolstadt</p>
+            <p class="timeline-date"><i class="fas fa-calendar"></i>Nov 2025 – Present</p>
+            <ul class="timeline-description">
+              <li>Developed marker-based landing function using OCTAS and AirSim simulations</li>
+              <li>Built ROS2 package for topology-aware emergency landing system (95% success rate)</li>
+              <li>Engineered custom models and low-altitude dataset for dynamic object detection</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>ROS2</span>
+              <span>SegFormer</span>
+              <span>AirSim</span>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Fraunhofer -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>Research Assistant</h3>
+            <p class="timeline-company">Fraunhofer IVI</p>
+            <p class="timeline-date"><i class="fas fa-calendar"></i>Feb 2024 – Sep 2025</p>
+            <ul class="timeline-description">
+              <li>Designed 3D semantic and panoptic scene completion data pipeline for UAS</li>
+              <li>Engineered 50K+ sample dataset with RGB, thermal, depth, and 3D occupancy GT</li>
+              <li>Trained SOTA SSC models (DISC, CGFormer) for novel 3D architecture</li>
+              <li>Reduced external annotation costs by 97% via image subset optimization</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>PyTorch</span>
+              <span>3D Vision</span>
+              <span>Dataset Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3: Ideaforge -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>Embedded Systems Engineer</h3>
+            <p class="timeline-company">Ideaforge Technology Private Limited</p>
+            <p class="timeline-date"><i class="fas fa-calendar"></i>Sep 2020 – Sep 2022</p>
+            <ul class="timeline-description">
+              <li>Headed development of propulsion system ensuring reliable UAV performance</li>
+              <li>Engineered FOC-based ESC for BLDC motors and Li-ion battery pack charger</li>
+              <li>Developed embedded HW/SW for GPS-denied UAV navigation via ORB-SLAM3</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>C++</span>
+              <span>STM32</span>
+              <span>RTOS</span>
+              <span>Power Electronics</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
     <!-- Achievements Section -->
     <section id="achievements" class="achievements-container container">
       <div class="division"></div>
@@ -445,19 +813,25 @@
       </div>
 
       <article class="achievements-grid">
-        <!-- <div class="achievement-card">
+        <!-- 2025 Award for Best Student -->
+        <div class="achievement-card award-highlight">
+          <div class="award-badge">
+            <i class="fas fa-star"></i> 2025
+          </div>
           <div class="achievement-icon">
             <i class="fas fa-trophy"></i>
           </div>
           <div class="achievement-info">
-            <h3>Academic Excellence Award</h3>
-            <p>Outstanding performance in M.Eng AI program</p>
+            <h3>Award for Best Student</h3>
+            <p>M.S.S. Master's Program</p>
+            <p class="award-organization">Förderverein of Campus Cham, Technische Hochschule Deggendorf</p>
             <span class="achievement-date">2025</span>
           </div>
-        </div> -->
+        </div>
+
         <div class="achievement-card">
           <div class="achievement-icon">
-            <i class="MCP Servers"></i>
+            <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="achievement-info">
             <h3>Agent-Based Learning Specialization</h3>
@@ -613,6 +987,92 @@
 
       <a href="https://huggingface.co/Bharadhwajsaimatha" class="btn btn-secondary"
         target="_blank">View All Spaces <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="github-stats" class="github-stats-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>GitHub Activity</h2>
+        <p>Track my development contributions and open source work</p>
+      </div>
+
+      <article class="github-stats-grid">
+        <!-- GitHub Stats Cards -->
+        <div class="github-card">
+          <div class="stat-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="stat-content">
+            <h3>GitHub Profile</h3>
+            <p class="stat-value" id="github-repos">-</p>
+            <p class="stat-label">public repositories</p>
+            <a href="https://github.com/Bharadhwajsaimatha" target="_blank" class="stat-link">
+              Visit Profile <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="github-card">
+          <div class="stat-icon">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <div class="stat-content">
+            <h3>Contributions</h3>
+            <p class="stat-value" id="github-followers">-</p>
+            <p class="stat-label">followers</p>
+            <a href="https://github.com/Bharadhwajsaimatha?tab=followers" target="_blank" class="stat-link">
+              View Followers <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="github-card">
+          <div class="stat-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stat-content">
+            <h3>Popular Repos</h3>
+            <p class="stat-value" id="github-stars">-</p>
+            <p class="stat-label">stars on projects</p>
+            <a href="https://github.com/Bharadhwajsaimatha?tab=repositories" target="_blank" class="stat-link">
+              View Repos <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- GitHub Activity Graph -->
+        <div class="github-chart">
+          <h4>Recent Activity</h4>
+          <svg id="contribution-graph" width="100%" height="100" viewBox="0 0 500 100">
+            <text x="50%" y="50" text-anchor="middle" fill="currentColor" font-size="14">
+              Loading contribution data...
+            </text>
+          </svg>
+        </div>
+      </article>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Latest Blog Posts</h2>
+        <p>Insights on AI, Computer Vision, and Technology</p>
+      </div>
+
+      <article class="blog-grid" id="blog-posts">
+        <div class="blog-card loading">
+          <div class="blog-skeleton"></div>
+          <p style="text-align: center; opacity: 0.6; padding: 2rem;">Loading recent posts...</p>
+        </div>
+      </article>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://loose0ends.wordpress.com/" target="_blank" class="btn btn-secondary">
+          Read All Articles <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
     </section>
 
     <!-- Contact Form Section -->
