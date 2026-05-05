@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://bharadhwajsaimatha.github.io/portfolio/" />
     <meta property="og:title" content="Sai Bharadhwaj Matha - Research Engineer in AI & Computer Vision" />
     <meta property="og:description" content="Explore my research in 3D scene completion, semantic mapping, SLAM, and autonomous systems. CVPR 2026 and ECCV 2026 conference papers." />
-    <meta property="og:image" content="https://bharadhwajsaimatha.github.io/portfolio/assets/profile_img.png" />
+    <meta property="og:image" content="https://bharadhwajsaimatha.github.io/portfolio/assets/profile_img_new.png" />
     <meta property="og:site_name" content="Sai Bharadhwaj Matha - Portfolio" />
 
     <!-- Twitter -->
@@ -26,7 +26,7 @@
     <meta property="twitter:url" content="https://bharadhwajsaimatha.github.io/portfolio/" />
     <meta property="twitter:title" content="Sai Bharadhwaj Matha - Research Engineer in AI & Computer Vision" />
     <meta property="twitter:description" content="Research Engineer specializing in 3D vision, SLAM, robotics, and AI. Exploring autonomous systems and intelligent perception." />
-    <meta property="twitter:image" content="https://bharadhwajsaimatha.github.io/portfolio/assets/profile_img.png" />
+    <meta property="twitter:image" content="https://bharadhwajsaimatha.github.io/portfolio/assets/profile_img_new.png" />
     <meta name="twitter:creator" content="@bharadhwaj10" />
 
     <!-- Additional SEO -->
@@ -120,7 +120,7 @@
       <section class="header-container">
         <img
           class="profile-image"
-          src="assets/profile_img.png"
+          src="assets/profile_img_new.png"
           alt=""
         />
         <h1>Hi I'm Bharadhwaj!</h1>
@@ -1093,35 +1093,39 @@
           </div>
         </div>
 
-        <form class="contact-form" action="https://formspree.io/f/xpznkdqr" method="POST">
+        <div data-fs-success style="display: none; padding: 1.5rem; background: #d4edda; color: #155724; border-radius: 15px; margin-bottom: 2rem; text-align: center; font-weight: 500;">
+          ✅ Thank you for your message! I'll get back to you soon.
+        </div>
+        <div data-fs-error style="display: none; padding: 1.5rem; background: #f8d7da; color: #721c24; border-radius: 15px; margin-bottom: 2rem;"></div>
+
+        <form class="contact-form" id="contact-form">
           <div class="form-group">
             <label for="name">Name *</label>
-            <input type="text" id="name" name="name" required placeholder="Your full name">
+            <input type="text" id="name" name="name" required placeholder="Your full name" data-fs-field>
+            <span data-fs-error="name" style="color: #d32f2f; font-size: 0.875rem; display: block; margin-top: 0.25rem;"></span>
           </div>
 
           <div class="form-group">
             <label for="email">Email (Optional)</label>
-            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" data-fs-field>
+            <span data-fs-error="email" style="color: #d32f2f; font-size: 0.875rem; display: block; margin-top: 0.25rem;"></span>
           </div>
 
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" data-fs-field>
+            <span data-fs-error="subject" style="color: #d32f2f; font-size: 0.875rem; display: block; margin-top: 0.25rem;"></span>
           </div>
 
           <div class="form-group">
             <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, question, or just say hello!"></textarea>
+            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, question, or just say hello!" data-fs-field></textarea>
+            <span data-fs-error="message" style="color: #d32f2f; font-size: 0.875rem; display: block; margin-top: 0.25rem;"></span>
           </div>
 
-          <button type="submit" class="btn btn-primary submit-btn">
+          <button type="submit" class="btn btn-primary submit-btn" data-fs-submit-btn>
             <i class="fas fa-paper-plane"></i> Send Message
           </button>
-
-          <!-- Hidden fields for Formspree -->
-          <input type="hidden" name="_subject" value="New Contact Form Submission - Portfolio">
-          <input type="hidden" name="_next" value="https://bharadhwajsaimatha.github.io/portfolio/thank-you.html">
-          <input type="hidden" name="_replyto" value="bharadhwaj2299@gmail.com">
         </form>
       </div>
     </section>
@@ -1160,6 +1164,11 @@
         <p>Copyright &copy; Communitypro <span id="datee"></span>, All rights reserved</p>
       </div>
     </footer>
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#contact-form', formId: 'xeenkeop' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
     <script src="js/script.js"></script>
   </body>
 </html>
